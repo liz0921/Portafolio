@@ -9,6 +9,7 @@ import { ScrollSpyService } from 'ng-spy';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit, AfterViewInit{
+  title="Lizbeth Montero"; 
   public fixedHeader: boolean = false;
   private windowScroll$: Subscription = Subscription.EMPTY;
   constructor(private spyService: ScrollSpyService,private titleService: Title){}
