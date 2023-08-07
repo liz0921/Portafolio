@@ -16,7 +16,7 @@ import { BlogComponent } from './main/blog/blog.component';
 import { ContactComponent } from './main/contact/contact.component';
 import {NgClickOutsideDirective} from 'ng-click-outside2';
 import { ScrollSpyModule } from 'ng-spy';
-
+import { HttpClient } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +29,7 @@ import { ScrollSpyModule } from 'ng-spy';
     WorkComponent,
     TestimonialsComponent,
     BlogComponent,
-    ContactComponent
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,7 +37,7 @@ import { ScrollSpyModule } from 'ng-spy';
     BrowserAnimationsModule,
     CarouselModule,
     ScrollSpyModule,
-    NgClickOutsideDirective
+    NgClickOutsideDirective,
   ],
   providers: [],
   bootstrap: [AppComponent]
