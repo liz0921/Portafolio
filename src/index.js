@@ -1,20 +1,20 @@
 const express = require('express');
 const path = require('path');
 
-const app = express();
+// const app = express();
 
-// Define la carpeta de distribución de la aplicación Angular
-const distFolder = path.join(__dirname, 'src', 'Portafolio'); // Reemplaza 'nombre-de-tu-app' con el nombre real de tu aplicación
+// // Define la carpeta de distribución de la aplicación Angular
+// const distFolder = path.join(__dirname, 'src', 'Portafolio'); // Reemplaza 'nombre-de-tu-app' con el nombre real de tu aplicación
 
 
 
-// Configura una ruta para manejar todas las demás solicitudes y redirigirlas a la página principal
-app.get('/', (req, res) => {
-  res.sendFile(path.join(distFolder, 'src\\index.html'));
-});
+// // Configura una ruta para manejar todas las demás solicitudes y redirigirlas a la página principal
+// app.get('/', (req, res) => {
+//   res.sendFile(path.join(distFolder, 'src\\index.html'));
+// });
 
-// Inicia el servidor en el puerto deseado
-const port = process.env.PORT || 3000; // Obtén el puerto de una variable de entorno o usa el puerto 3000 por defecto
-app.listen(port, () => {
-  console.log(`Servidor en ejecución en el puerto ${port}`);
-});
+// // Inicia el servidor en el puerto deseado
+// const port = process.env.PORT || 3000; // Obtén el puerto de una variable de entorno o usa el puerto 3000 por defecto
+// app.listen(port, () => {
+//   console.log(`Servidor en ejecución en el puerto ${port}`);
+// });
