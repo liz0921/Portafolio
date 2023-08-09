@@ -6,15 +6,15 @@
             <img class="logo-light" title="" alt="" src="assets/img/logo-light.svg">
         </a>
     </div>
-    <div class="mob-h-right" (clickOutside)="onClickedOutside($event)">
-        <button class="toggler-menu" [ngClass]="{'open': sidebarOpen}" (click)="toggleMenu()">
+    <div class="mob-h-right">
+        <button class="toggler-menu">
             <span></span>
         </button>
     </div>
 </div>
 <!-- End -->
 <!-- Header Top -->
-<div class="header-left-fixed one-page-nav" [ngClass]="{'menu-open menu-open-desk' : sidebarOpen}">
+<div class="header-left-fixed one-page-nav" >
     <!-- Brand -->
     <div class="logo">
         <a class="navbar-brand" href="javascript:">
@@ -25,28 +25,28 @@
     <!-- / -->
     <ul class="main-menu">
         <li>
-            <a class="menu-item"  spyOn="home" activeClass="active"  href="#home" (click)="fullPageScroll('home')">
+            <a class="menu-item"  spyOn="home" activeClass="active"  href="#home" >
                 Inicio
             </a>
         </li>
         <li>
-            <a class="menu-item" spyOn="about" activeClass="active"  href="#about" (click)="fullPageScroll('about')"> 
+            <a class="menu-item" spyOn="about" activeClass="active"  href="#about" > 
                 Sobre mi
             </a>
         </li>
         <li>
-            <a class="menu-item"  spyOn="services" activeClass="active" href="#services" (click)="fullPageScroll('services')">
+            <a class="menu-item"  spyOn="services" activeClass="active" href="#services" >
                 Servicios
             </a>
         </li>
         <li>
-            <a class="menu-item" spyOn="work" activeClass="active"  href="#work" (click)="fullPageScroll('work')">
+            <a class="menu-item" spyOn="work" activeClass="active"  href="#work" >
                 Portafolio
             </a>
         </li>
 
         <li>
-            <a class="menu-item"  spyOn="contact" activeClass="active"  href="#contact" (click)="fullPageScroll('contact')">
+            <a class="menu-item"  spyOn="contact" activeClass="active"  href="#contact" >
                 Contacto
             </a>
         </li>
@@ -56,7 +56,8 @@
             <a href="https://www.linkedin.com/in/lizbeth-montero-ramirez/">  <i class="bi bi-linkedin"></i></a>
         </li>
         <li>
-            <a href="https://api.whatsapp.com/send?phone=1234567890&text=¡Hola! Estoy interesado en tus servicios.">  <i class="bi bi-whatsapp"></i></a>
+            <a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=50688293745&text=¡Hola! Estoy interesado en tus servicios." > <i class="bi bi-whatsapp"></i></a>
+
         </li>
         <li>
             <a href="mailto:lizmonram@gmail.com">  <i class="bi-envelope"></i></a>

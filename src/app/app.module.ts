@@ -15,7 +15,6 @@ import { TestimonialsComponent } from './main/testimonials/testimonials.componen
 import { BlogComponent } from './main/blog/blog.component';
 import { ContactComponent } from './main/contact/contact.component';
 import {NgClickOutsideDirective} from 'ng-click-outside2';
-import { ScrollSpyModule } from 'ng-spy';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +34,6 @@ import { ScrollSpyModule } from 'ng-spy';
     RouterModule,
     BrowserAnimationsModule,
     CarouselModule,
-    ScrollSpyModule,
     NgClickOutsideDirective,
   ],
   providers: [],

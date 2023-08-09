@@ -6,24 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  public sidebarOpen: boolean = false;
-  public currentSection = 'home';
+
   
-  constructor(
-  ) {}
-
-  fullPageScroll(i:any) {
-    if(this.sidebarOpen)
-      this.sidebarOpen = false;
-  }
-
-  toggleMenu(){
-    this.sidebarOpen = !this.sidebarOpen;
-  }
-
-  onClickedOutside(e: Event) {
-    if(this.sidebarOpen)
-      this.sidebarOpen = false;
-  }
 
 }
