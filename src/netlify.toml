@@ -3,25 +3,13 @@
   api_version = "2"
 
 [build.environment]
-  NODE_VERSION = "14"
+  NODE_VERSION = "14" 
 
 [build]
-  command = "npm run build"
-  publish = "dist"
+  command = "ng build --prod"  
+  publish = "dist/<my-first-project>"  n
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Frame-Options = "DENY"
-    X-XSS-Protection = "1; mode=block"
-
-[[redirects]]
-  from = "https://www.example.com/*"
-  to = "https://example.com/:splat"
-  status = 301
-  force = true
