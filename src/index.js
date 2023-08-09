@@ -4,10 +4,9 @@ const path = require('path');
 const app = express();
 
 // Define la carpeta de distribución de la aplicación Angular
-const distFolder = path.join(__dirname, 'dist', 'Portafolio'); // Reemplaza 'nombre-de-tu-app' con el nombre real de tu aplicación
+const distFolder = path.join(__dirname, 'src', 'Portafolio'); // Reemplaza 'nombre-de-tu-app' con el nombre real de tu aplicación
 
-// Configura el middleware para servir los archivos estáticos
-app.use(express.static(distFolder));
+
 
 // Configura una ruta para manejar todas las demás solicitudes y redirigirlas a la página principal
 app.get('/', (req, res) => {
