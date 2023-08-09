@@ -1,5 +1,5 @@
 {
-  "name": "Profile",
+  "name": "Portafolio",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -30,6 +30,7 @@
     "lightbox2": "^2.11.4",
     "ng-click-outside2": "^11.2.0",
     "ngx-owl-carousel-o": "^16.0.0",
+    "path": "^0.12.7",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "typescript": "^5.1.6",
