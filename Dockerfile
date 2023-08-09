@@ -8,7 +8,7 @@ LABEL fly_launch_runtime="Node.js"
 
 # Node.js app lives here
 WORKDIR /app
-
+RUN npm prune  --production
 # Set production environment
 ENV NODE_ENV="production"
 
@@ -42,4 +42,4 @@ COPY --from=build /app /app
 
 # Start the server by default, this can be overwritten at runtime
 EXPOSE 3000
-CMD [ "npm", "run", "start" ]
+CMD [ "node", "src/index.js" ]

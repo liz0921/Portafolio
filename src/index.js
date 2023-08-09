@@ -10,7 +10,7 @@ const distFolder = path.join(__dirname, 'src', 'Portafolio'); // Reemplaza 'nomb
 
 // Configura una ruta para manejar todas las demás solicitudes y redirigirlas a la página principal
 app.get('/', (req, res) => {
-  res.sendFile(path.join(distFolder, 'index.html'));
+  res.sendFile(path.join(distFolder, 'src\\index.html'));
 });
 
 // Inicia el servidor en el puerto deseado
