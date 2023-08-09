@@ -15,6 +15,8 @@ import { TestimonialsComponent } from './main/testimonials/testimonials.componen
 import { BlogComponent } from './main/blog/blog.component';
 import { ContactComponent } from './main/contact/contact.component';
 import {NgClickOutsideDirective} from 'ng-click-outside2';
+import { AppRoutingModule } from './app-routing.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +37,7 @@ import {NgClickOutsideDirective} from 'ng-click-outside2';
     BrowserAnimationsModule,
     CarouselModule,
     NgClickOutsideDirective,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
