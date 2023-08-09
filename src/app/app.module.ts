@@ -16,7 +16,6 @@ import { BlogComponent } from './main/blog/blog.component';
 import { ContactComponent } from './main/contact/contact.component';
 import {NgClickOutsideDirective} from 'ng-click-outside2';
 import { ScrollSpyModule } from 'ng-spy';
-import { LottieModule } from 'ngx-lottie';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +37,6 @@ import { LottieModule } from 'ngx-lottie';
     CarouselModule,
     ScrollSpyModule,
     NgClickOutsideDirective,
-    LottieModule
   ],
   providers: [],
   bootstrap: [AppComponent]
